@@ -2,7 +2,7 @@
 Cadastro Colaboradores,Cadastro Empresas Parceiras,Cadastro Tecnologias,Relação Empresa-Tecnologia (tabela de relacionamento)
 
 2 Principais Campos e Tipos:
-Cadastro Colaboradores:ID (chave primária, numérica),Nome (texto),Cargo (texto),CPF (texto),Telefone (texto),Empresa Parceira ID: (chave estrangeira, numérica)
+Cadastro Colaboradores:ID (chave primária, numérica),Nome (texto),Cargo (texto),CPF (texto),Telefone (texto), Cadrastro Empresa Parceira ID: (chave estrangeira, numérica)
 
 Cadastro Empresas Parceiras:ID (chave primária, numérica),Nome (texto),CNPJ (texto),Área de Atividade (texto)
 
