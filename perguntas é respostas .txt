@@ -1,0 +1,34 @@
+1 Entidades Necessárias: 
+Cadastro Colaboradores,Cadastro Empresas Parceiras,Cadastro Tecnologias,Relação Empresa-Tecnologia (tabela de relacionamento)
+
+2 Principais Campos e Tipos:
+Cadastro Colaboradores:ID (chave primária, numérica),Nome (texto),Cargo (texto),CPF (texto),Telefone (texto)
+
+Cadastro Empresas Parceiras:ID (chave primária, numérica),Nome (texto),CNPJ (texto),Área de Atividade (texto), cadastro colaboradores ID (chave estrangeira, numérica)
+
+Cadastro Tecnologias:ID (chave primária, numérica),Nome (texto),Área de Atividade (texto)
+
+Relação Empresa-Tecnologia:ID (chave primária, numérica),Cadastro Empresa Parceira ID (chave estrangeira, numérica),Cadastro Tecnologia ID (chave estrangeira, numérica)
+
+3 Relacionamentos:
+Um colaborador pertence a uma empresa parceira.
+Uma empresa parceira pode ter muitos colaboradores.
+Uma empresa parceira pode estar relacionada a várias tecnologias.
+Uma tecnologia pode ser usada por várias empresas parceiras.
+
+4 Simulação de Registros:
+Cadastro Colaboradores:
+ID: 1, Nome: João Silva, Cargo: Desenvolvedor, CPF: 123.456.789-00, Telefone: (11) 98765-4321, Empresa Parceira ID: 1
+ID: 2, Nome: Maria Santos, Cargo: Analista de Dados, CPF: 987.654.321-00, Telefone: (11) 12345-6789, Empresa Parceira ID: 2
+
+Cadastro Empresas Parceiras:
+ID: 1, Nome: Empresa A, CNPJ: 1234567890001, Área de Atividade: Tecnologia da Informação
+ID: 2, Nome: Empresa B, CNPJ: 9876543210001, Área de Atividade: Consultoria Empresarial
+
+Cadastro Tecnologias:
+ID: 1, Nome: Inteligência Artificial, Área de Atividade: Tecnologia da Informação
+ID: 2, Nome: Análise de Dados, Área de Atividade: Tecnologia da Informação
+
+Relação Empresa-Tecnologia:
+ID: 1, Empresa Parceira ID: 1, Tecnologia ID: 1
+ID: 2, Empresa Parceira ID: 2, Tecnologia ID: 2
