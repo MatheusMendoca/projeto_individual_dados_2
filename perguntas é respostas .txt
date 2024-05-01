@@ -2,9 +2,9 @@
 Cadastro Colaboradores,Cadastro Empresas Parceiras,Cadastro Tecnologias,Relação Empresa-Tecnologia (tabela de relacionamento)
 
 2 Principais Campos e Tipos:
-Cadastro Colaboradores:ID (chave primária, numérica),Nome (texto),Cargo (texto),CPF (texto),Telefone (texto), Cadrastro Empresa Parceira ID: (chave estrangeira, numérica)
+Cadastro Colaboradores:ID (chave primária, numérica),Nome (texto),Cargo (texto),CPF (texto),Telefone (texto)
 
-Cadastro Empresas Parceiras:ID (chave primária, numérica),Nome (texto),CNPJ (texto),Área de Atividade (texto)
+Cadastro Empresas Parceiras:ID (chave primária, numérica),Nome (texto),CNPJ (texto),Área de Atividade (texto), Cadastro Colaboradores ID  (chave estrangeira, numérica)
 
 Cadastro Tecnologias:ID (chave primária, numérica),Nome (texto),Área de Atividade (texto)
 
@@ -18,17 +18,17 @@ Uma tecnologia pode ser usada por várias empresas parceiras.
 
 4 Simulação de Registros:
 Cadastro Colaboradores:
-ID: 1, Nome: João Silva, Cargo: Desenvolvedor, CPF: 123.456.789-00, Telefone: (11) 98765-4321, Cadastro Empresa Parceira ID: 1
-ID: 2, Nome: Maria Santos, Cargo: Analista de Dados, CPF: 987.654.321-00, Telefone: (11) 12345-6789, Cadrastro Empresa Parceira ID: 2
+ID: 1, Nome: João Silva, Cargo: Desenvolvedor, CPF: 123.456.789-00, Telefone: (11) 98765-4321,
+ID: 2, Nome: Maria Santos, Cargo: Analista de Dados, CPF: 987.654.321-00, Telefone: (11) 12345-6789, 
 
 Cadastro Empresas Parceiras:
-ID: 1, Nome: Empresa A, CNPJ: 1234567890001, Área de Atividade: Tecnologia da Informação
-ID: 2, Nome: Empresa B, CNPJ: 9876543210001, Área de Atividade: Consultoria Empresarial
+ID: 1, Nome: Empresa A, CNPJ: 1234567890001, Área de Atividade: Tecnologia da Informação ,Cadastro Colaboradores ID 1 (chave estrangeira, numérica)
+ID: 2, Nome: Empresa B, CNPJ: 9876543210001, Área de Atividade: Consultoria Empresarial, Cadastro Colaboradores ID 2 (chave estrangeira, numérica)
 
 Cadastro Tecnologias:
 ID: 1, Nome: Inteligência Artificial, Área de Atividade: Tecnologia da Informação
 ID: 2, Nome: Análise de Dados, Área de Atividade: Tecnologia da Informação
 
 Relação Empresa-Tecnologia:
-ID: 1, Empresa Parceira ID: 1, Tecnologia ID: 1
-ID: 2, Empresa Parceira ID: 2, Tecnologia ID: 2
+ID: 1, Cadastro Empresa Parceira ID: 1, Cadasto Tecnologia ID: 1
+ID: 2, Cadastro Empresa Parceira ID: 2, Cadastro Tecnologia ID: 2
